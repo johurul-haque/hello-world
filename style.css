@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    width: 100vw;
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.introduction {
+    background-color: #013243;
+    position: relative;
+    text-align: center;
+}
+
+.text-wrap h1 {
+    color: #ffff;
+    margin-bottom: 0;
+}
+
+.text-wrap p {
+    color: #86bfd3;
+    margin-bottom: 0;
+}
+
+.mockup {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.login {
+    background-color: #ffff;
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.login-wrap {
+    width: 80%;
+    margin: auto;
+    
+}
+
+.email-wrap label, .password-wrap label {
+    display: block;
+    font-weight: bold;
+}
+
+#email, #password {
+    display: block;
+    width: 100%;
+    height: 2.7rem;
+}
+
+input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input::placeholder {
+    font-family: 'Roboto';
+}
+
+input:focus {
+    transition: border .4s ease-in-out;
+    border: 1px solid #013243;
+}
+
+a {
+    font-weight: bold;
+    color: #013243;
+}
+
+button {
+    display: block;
+    height: 2.7rem;
+    background-color: #013243;
+    color: #ffff;
+    font-family: 'Roboto';
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 1.34rem;
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+button:hover {
+    transition: box-shadow .2s ease-in-out;
+    box-shadow: 0 5px 10px rgb(190, 190, 190);
+}
+
+button:active {
+    background-color: #013243;
+    transform: translateY(2px);
+  }
+
+.email-wrap, .password-wrap, .checkbox {
+    margin-bottom: 1rem;
+}
+
+.checkbox input {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.checkbox label {
+    margin-left: .7rem;
+    vertical-align: top;
+}
+
+.checkbox {
+    display: flex;
+}
+
+@media screen and (min-width: 600px) {
+    
+    .container {
+        width: 70%;
+        margin: auto;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+
+    .background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
