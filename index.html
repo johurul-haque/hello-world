@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradie Sign Up Page</title>
+    <link rel="icon" type="images/x-icon" href="Assets\password.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <img class="background" src="Assets/Background.png" alt="Background gradient">
+        <div class="container">
+            <div class="introduction">
+                <div class="text-wrap">
+                    <h1>Gradie</h1>
+                    <p>Beautiful Gradients in seconds.</p>
+                </div>
+
+                <div class="mockup-wrap">
+                    <img class="mockup" src="Assets/iPhone Mockup.png" alt="iPhone mockup">
+                </div>
+            </div>
+
+            <div class="login">
+                <div class="login-wrap">
+                    <h1>Login</h1>
+                    <form action="submitted.html" method="get">
+                        <div class="email-wrap">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="password-wrap">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="At least 8 characters" minlength="8" required>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <div>
+                                <input type="checkbox" name="terms" id="terms" class="checkbox-custom" required>
+                            </div>
+                            
+                            <div class="checkbox">
+                                <label for="terms"class="checkbox-custom-label">
+                                    <span>By creating an account, you agree to the <a href="#">Terms & Conditions</a>.
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit">Create an Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
