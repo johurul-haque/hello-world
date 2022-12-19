@@ -275,3 +275,19 @@ button:active {
         border-radius: 0;
     }
 }
+
+@media screen and (max-height: 438px) and (orientation: landscape) {
+    .wrapper {
+        flex-direction: row;
+        width: 57.6rem;
+        height: 27.42rem;
+    }
+
+    .container {
+        height: 438px;
+    }
+
+    main {
+        height: 438px;
+    }
+}
